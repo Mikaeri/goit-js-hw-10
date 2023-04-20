@@ -18,3 +18,16 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.countries-list {
+  list-style: none;
+}
+
+.countries-name {
+font-size: 14px;
+padding: 0;
+}
+
+.text{
+  font-weight: 500;
+}

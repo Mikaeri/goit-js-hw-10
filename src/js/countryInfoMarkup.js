@@ -6,8 +6,8 @@ export function countryInfoMarkup(arr){
     <h2 class="country-name">${official}</h2>
   </div>
   <div>
-    <p class="country-describe">Capital: ${capital}</p>
-    <p class="country-describe">Population: ${population}</p>
-    <p class="country-describe">Languages: ${Object.values(languages)}</p>
+    <p class="country-describe"><span class="text">Capital: </span>${capital}</p>
+    <p class="country-describe"><span class="text">Population: </span>${population}</p>
+    <p class="country-describe"><span class="text">Languages: </span>${Object.values(languages)}</p>
   </div>`);
 }
