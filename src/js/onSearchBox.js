@@ -24,10 +24,11 @@ export function onSearchBox(evt) {
     }
       })
       .catch((err) => {
+        refs.countriesList.innerHTML = '';
         if (searchQuery.trim() ===""){
             return;
         }
-      else {
+      else if (err.message ==="404"){
           return Notify.failure('Oops, there is no country with that name');
         }
   })
