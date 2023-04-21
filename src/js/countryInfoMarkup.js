@@ -1,8 +1,7 @@
 export function countryInfoMarkup(arr){
-    return arr.map(({flags:{svg}, name:{official}, capital, population, languages}) => `<div>
-    <svg class="country-flag" width="60" height="40">
-      <use href="${svg}"></use>
-    </svg>
+    return arr.map(({flags:{svg}, name:{official}, capital, population, languages}) => 
+    `<div>
+      <img class="country-image" src="${svg}" width="100"></іmg>
     <h2 class="country-name">${official}</h2>
   </div>
   <div>
